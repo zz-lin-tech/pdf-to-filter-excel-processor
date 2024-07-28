@@ -1,1 +1,1 @@
-"streamlit\npdfplumber\npandas\nopenpyxl" 
+-e "streamlit==1.4.0\npdfplumber==0.5.28\npandas==1.3.5\nopenpyxl==3.0.9" 
