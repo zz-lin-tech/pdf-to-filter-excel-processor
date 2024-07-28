@@ -1,0 +1,1 @@
+"streamlit\npdfplumber\npandas\nopenpyxl" 
