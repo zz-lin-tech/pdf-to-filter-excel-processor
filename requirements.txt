@@ -1,1 +1,1 @@
--e "streamlit==1.4.0\npdfplumber==0.5.28\npandas==1.3.5\nopenpyxl==3.0.9\nnumpy==1.21.0\nprotobuf==3.20.3" 
+-e "streamlit==1.4.0\npdfplumber==0.5.28\npandas==1.3.5\nopenpyxl==3.0.9\nnumpy>=1.21.0,<1.23.0\nprotobuf==3.20.3" 
