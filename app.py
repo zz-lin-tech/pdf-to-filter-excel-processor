@@ -51,13 +51,6 @@ def process_pdfs(pdf_files):
 
 
 st.title('PDF to Excel Processor')
-# 添加使用说明
-st.markdown("""
-### 使用说明
-1. 点击 **Browse files** 按钮上传一个或多个 PDF 文件。
-2. 上传完成后，点击 **Process** 按钮处理文件。
-3. 处理完成后，点击 **Download Excel file** 按钮下载生成的 Excel 文件。
-""")
 
 # 添加使用说明
 st.markdown("""
