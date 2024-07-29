@@ -3,6 +3,7 @@ import pdfplumber
 import pandas as pd
 import os
 import tempfile
+import time
 
 def process_pdfs(pdf_files):
     all_data = []
@@ -51,7 +52,14 @@ st.markdown("""
 2. 上传完成后，点击 **Process** 按钮处理文件。
 3. 处理完成后，点击 **Download Excel file** 按钮下载生成的 Excel 文件。
 """)
+
 uploaded_files = st.file_uploader("Upload PDF files", type="pdf", accept_multiple_files=True)
+
+def keep_alive():
+    while True:
+        time.sleep(60 * 5)  # 每5分钟发送一次请求
+        st.write("Keep alive")
+
 if st.button('Process'):
     if uploaded_files:
         file_paths = []
@@ -67,6 +75,10 @@ if st.button('Process'):
                                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
     else:
         st.error("Please upload at least one PDF file.")
+else:
+    keep_alive()  # 开启心跳机制
+
+
 
 
 
